@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of three numbers</title>
+</head>
+
+<body>
+    
+        <script>
+            let input = prompt("Enter 3 numbers:");
+            let numbers = input.split(" ").map(Number);
+        
+            let num1 = numbers[0];
+            let num2 = numbers[1];
+            let num3 = numbers[2];
+        
+            let largest = num1;
+            if (num2 > largest) largest = num2;
+            if (num3 > largest) largest = num3;
+        
+            document.write("The largest number is: " + largest);
+        </script>
+    
+</body>
+
+</html>

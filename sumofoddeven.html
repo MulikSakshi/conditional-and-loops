@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Odd and Even Numbers</title>
+</head>
+<body>
+    <script>
+        let sumEven = 0;
+        let sumOdd = 0;
+
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 === 0) {  
+                sumEven += i; 
+            } else {
+                sumOdd += i; 
+            }
+        }
+
+        document.write("Sum of even numbers from 1 to 100: " + sumEven + "<br>");
+        document.write("Sum of odd numbers from 1 to 100: " + sumOdd);
+    </script>
+</body>
+</html>

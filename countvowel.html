@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels and Consonants Counter</title>
+</head>
+<body>
+    <script>
+       
+        let str = prompt("Enter a string:");
+
+        let vowels = "aeiouAEIOU";
+        let countVowels = 0;
+        let countConsonants = 0;
+
+        for (let i = 0; i < str.length; i++) {
+            let char = str[i];
+            if (/[a-zA-Z]/.test(char)) { 
+                if (vowels.includes(char)) {
+                    countVowels++;
+                } else {
+                    countConsonants++;
+                }
+            }
+        }
+
+        document.write(`Total vowels: ${countVowels} <br>`);
+        document.write(`Total consonants: ${countConsonants}`);
+    </script>
+</body>
+</html>
